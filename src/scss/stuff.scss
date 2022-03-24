@@ -58,3 +58,46 @@
     background-color: #e5e5e5;
   }
 }
+
+.kubiks {
+  display: grid;
+
+  grid-gap: 20px;
+  grid-template-areas:
+    'header header header'
+    'nav content aside'
+    'footer footer footer';
+  grid-template-columns: 250px 1fr 150px;
+
+  // .kubiks__item
+  &__item {
+    border: 1px dotted green;
+    padding: 5px;
+    background-color: lightgray;
+  }
+
+  // .kubiks__header
+  &__header {
+    grid-area: header;
+  }
+
+  // .kubiks__nav
+  &__nav {
+    grid-area: nav;
+  }
+
+  // .kubiks__content
+  &__content {
+    grid-area: content;
+  }
+
+  // .kubiks__aside
+  &__aside {
+    grid-area: aside;
+  }
+
+  // .kubiks__footer
+  &__footer {
+    grid-area: footer;
+  }
+}
