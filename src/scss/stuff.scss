@@ -48,15 +48,13 @@
 
 .inner-row {
   display: grid;
-
-  //grid-template-areas: 'inner-item inner-item inner-item' 'inner-item inner-item inner-item';
-  grid-template-columns: 1fr 1fr 1fr;
-  //grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
 
   // .inner-row__item
   &__item {
-    grid-area: inner-item;
     padding: 5px;
     border: 1px dashed green;
+    background-color: #e5e5e5;
   }
 }
