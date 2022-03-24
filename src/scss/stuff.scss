@@ -9,6 +9,7 @@
 
   // grid-auto-rows: 100px;
   //min-height: 100vh;
+  transition: grid-template-columns 3s ease;
 
   // .grid__item
   &__item {
@@ -26,6 +27,7 @@
   // .grid__nav
   &__nav {
     grid-area: nav;
+    transition: all 3s ease;
   }
 
   // .grid__aside
@@ -61,7 +63,6 @@
 
 .kubiks {
   display: grid;
-
   grid-gap: 20px;
   grid-template-areas:
     'header header header'
